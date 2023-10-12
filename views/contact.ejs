@@ -1,0 +1,43 @@
+<%- include('partials/header.ejs') %>
+
+<h1 id="textLarge">
+    <%= title %>
+</h1>
+
+            <div class="contact-left">
+
+                <p style="color: aliceblue;" text-align:center; sub-title >Leave a massege to reach out me</p>
+
+                <p style="color: aliceblue;" text-align: center;><strong>Email: </strong><i>musakhan38ruet@gmail.com</i></p>
+
+                <p style="color: aliceblue;"> <strong>Phone: </strong><i>(+1)416-5768623</i></p>
+
+            </div>
+
+            <form action="/home" name="contactMe">
+
+                <input type="text" name="Name" placeholder="First Name" required>
+
+                <input type="text" name="Name" placeholder="Last Name" required>
+
+                <input type="number" name="number" placeholder="Your Number" required>
+
+                <input type="email" name="Email" placeholder="Your Email" required>
+
+                <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+
+                <button type="submit" value="Send" class="btn btn2">Submit</button>
+
+            </form>
+
+            <br>
+
+            <br>
+
+            <span id="msg"></span>
+
+        </div>
+
+</div>
+
+<%- include('partials/footer.ejs') %>
